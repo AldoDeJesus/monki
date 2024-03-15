@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+}
+
+
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la ventana */
+  background-color: rgb(235, 209, 40);; /* Fondo blanco */
+}
+
+.tarjeta {
+  border: 2px solid black; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Texto centrado */
+  background-color: ivory;
+  border: none;
+}
+
+p{
+  font-size: xx-large;
+  padding: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+
+}
+img{
+  border-radius: 10%;
+}
+button{
+  font-size: xx-large;
+  padding: 0.75em;
+}
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#yesBtn{
+  transform: translate(-100%,0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 20%;
+  border: none;
+}
+
+#yesBtn:hover{
+
+  background-color: rgb(255, 38, 14);
+}
+
+#noBtn{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 20%;
+}
+
+@keyframes animat {
+  0% {
+      transform: scale(0);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes fanimado{
+  0%{
+      background-image: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
